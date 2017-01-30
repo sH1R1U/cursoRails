@@ -25,8 +25,9 @@ development:
   adapter: postgresql
   encoding: unicode
   database: cursoRails_development
+  host: localhost
   pool: 5
-  username: Alexis
+  username: alexis
   password: 1234
 
   # The specified database role being used to connect to postgres.
@@ -63,8 +64,9 @@ test:
   adapter: postgresql
   encoding: unicode
   database: cursoRails_test
+  host: localhost
   pool: 5
-  username: Alexis
+  username: alexis
   password: 1234
   
 
