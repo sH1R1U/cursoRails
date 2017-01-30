@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auto: MyString
+  genero: MyString
+  titulo: MyString
+  ano: 1
+  puntuacion: 1
+
+two:
+  auto: MyString
+  genero: MyString
+  titulo: MyString
+  ano: 1
+  puntuacion: 1
