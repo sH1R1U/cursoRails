@@ -57,3 +57,15 @@ gem 'rubocop','~> 0.39.0'
 gem 'devise'
 
 gem 'simple_token_authentication' , '~> 1.0'
+
+gem 'pundit'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+end
+
+group :test do 
+  gem 'database_cleaner'
+end
+
+gem 'factory_girl'
