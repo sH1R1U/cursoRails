@@ -1,0 +1,40 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637317318150447390);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (36.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNotifications (20170126021938)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637317318150447390)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637317318150447390);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNotifications (20170126021938)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637317318150447390)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637317318150447390);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNotifications (20170126021938)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637317318150447390)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637317318150447390);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNotifications (20170126021938)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637317318150447390)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637317318150447390);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNotifications (20170126021938)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637317318150447390)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637317318150447390);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNotifications (20170126021938)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637317318150447390)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637317318150447390);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNotifications (20170126021938)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (322.0ms)[0m  [1m[35mCREATE TABLE "notification" ("id" serial primary key, "follower" integer, "following" integer, "commentary_id" integer, "for_reading_id" integer, "favorite_book_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_ef4d6de1cc"
+FOREIGN KEY ("commentary_id")
+  REFERENCES "commentaries" ("id")
+, CONSTRAINT "fk_rails_ed464e8d55"
+FOREIGN KEY ("for_reading_id")
+  REFERENCES "for_readings" ("id")
+, CONSTRAINT "fk_rails_499905350f"
+FOREIGN KEY ("favorite_book_id")
+  REFERENCES "favorite_books" ("id")
+)[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637317318150447390)[0m
