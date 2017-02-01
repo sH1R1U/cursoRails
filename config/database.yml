@@ -24,6 +24,7 @@ default: &default
 development:
   adapter: postgresql
   encoding: unicode
+  host: localhost
   database: cursoRails_development
   pool: 5
   username: Alexis
@@ -62,6 +63,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
+  host: localhost
   database: cursoRails_test
   pool: 5
   username: Alexis
