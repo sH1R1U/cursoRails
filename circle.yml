@@ -1,0 +1,14 @@
+machine:
+
+  timezone:
+    Chile/Santiago # Set the timezone
+
+  # Version of ruby to use
+  ruby:
+    version:
+      ruby 2.4.0p0
+
+  dependencies:
+    post:
+      - bundle exec rubocop app -R
+      - bundle exec rspect
