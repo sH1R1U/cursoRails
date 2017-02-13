@@ -1,5 +1,5 @@
 #  Modelo para los comentarios
-class Commentary < ApplicationRecord::Base
-  belongs_to :usuario
-  belongs_to :libro
+class Commentary < ActiveRecord::Base
+  belongs_to :user
+  belongs_to :book
 end
