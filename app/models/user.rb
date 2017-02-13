@@ -1,5 +1,5 @@
 #  Modelo para el usuario
-class User < ApplicationRecord::Base
+class User < ActiveRecord::Base
   acts_as_token_authenticatable
 
   has_many :comentario
@@ -8,5 +8,4 @@ class User < ApplicationRecord::Base
   has_many :usuario
   has_many :usuario
 
-  devise :invitable, :database_authenticable, :recoverable, :rememberable, :trackable, :validatable, :lockable
 end
