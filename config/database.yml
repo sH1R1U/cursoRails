@@ -27,7 +27,7 @@ development:
   host: localhost
   database: cursoRails_development
   pool: 5
-  username: Alexis
+  username: alexis
   password: 1234
 
   # The specified database role being used to connect to postgres.
