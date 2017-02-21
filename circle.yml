@@ -11,4 +11,4 @@ machine:
   dependencies:
     post:
       - bundle exec rubocop app -R
-      - bundle exec rspect
+      - bundle exec rspec
