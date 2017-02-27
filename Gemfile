@@ -69,3 +69,5 @@ group :test do
 end
 
 gem 'factory_girl'
+
+gem 'will_paginate'
