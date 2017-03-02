@@ -9,7 +9,7 @@ class CreateNotifications < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
-    add_index 'notification', [follower], name: 'index_notification_on_follower', using: :btree
-    add_index 'notification', [following], name: 'index_notification_on_following', using: :btree
+    add_index 'notifications', [follower], name: 'index_notification_on_follower', using: :btree
+    add_index 'notifications', [following], name: 'index_notification_on_following', using: :btree
   end
 end

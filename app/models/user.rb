@@ -1,8 +1,8 @@
 #  Modelo para el usuario
-class User < ApplicationRecord
-  has_many :comentario
-  has_many :libro_favorito
-  has_many :por_leer
-  has_many :usuario
-  has_many :usuario
+class User < ApplicationRecord::Base
+  has_many :commentaries
+  has_many :favorite_books
+  has_many :for_readings
+  has_one :user
+  has_many :users
 end
